@@ -16,7 +16,7 @@ async function bootstrap() {
          },
   }));
 
-  // 👇 apply transform to all responses
+  // 👇 apply transform to all responses teste
   app.useGlobalInterceptors(new ClassSerializerInterceptor(app.get(Reflector)));
 
   	// 👇 apply PrismaClientExceptionFilter to entire application, requires HttpAdapterHost because it extends BaseExceptionFilter
